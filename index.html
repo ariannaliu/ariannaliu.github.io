@@ -76,6 +76,51 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody>
+            <tr onmouseout="mosaic_stop()" onmouseover="mosaic_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='mosaic_image'>
+                    <img src='images/mosaic_out.png' width="100%"></div>
+                    <img src='images/mosaic_in.png' width="100%">
+                </div>
+                <script type="text/javascript">
+                  function mosaic_start() {
+                    document.getElementById('mosaic_image').style.opacity = "1";
+                  }
+
+                  function mosaic_stop() {
+                    document.getElementById('mosaic_image').style.opacity = "0";
+                  }
+                  mosaic_stop()
+                </script>
+              </td>
+              
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://github.com/pschaldenbrand/StyleCLIPDraw">
+                  <papertitle>MOSAIC: Generating Consistent, Privacy-Preserving Scenes from Multiple Depth Views in Multi-Room Environments</papertitle>
+                </a>
+                <br>
+                <strong>Zhixuan Liu</strong>, 
+                <a href="https://zwandering.github.io/">Haokun Zhu</a>,
+                <a href="https://ruichen.pub/">Rui Chen</a>,
+                <a href="https://scholar.google.com/citations?user=7CLS0LwAAAAJ&hl=en">Jonathan Francis</a>,
+                <a href="https://soonminhwang.github.io/">Soonmin Hwang</a>,
+                <a href="https://frc.ri.cmu.edu/~zhangji/">Ji Zhang</a>,
+                <a href="https://www.cs.cmu.edu/~./jeanoh/">Jean Oh</a>
+                <br>
+                <em>Under Review</em><br>
+                <!-- <font color="red"><strong>Oral Presentation</strong></font> -->
+                <a href="https://arxiv.org/abs/2503.13816">Paper</a>
+                /
+                <a href="https://mosaic-cmubig.github.io/">Project Page</a>
+                /
+                <a href="https://mosaic-cmubig.github.io/">Code</a>
+                <p>
+                  MOSAIC generates multi-view consistent images based on depth prior along robot navigation trajectories. It handles arbitrary viewpoint changes in multi-room environments and generalizes to open vocabulary contexts.
+                </p>
+              </td>
+            </tr>
+
             <tr onmouseout="scoft_stop()" onmouseover="scoft_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
