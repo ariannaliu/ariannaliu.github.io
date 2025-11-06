@@ -54,7 +54,7 @@
             <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <heading>Research Interests</heading>
-                <p> My research interests lie in the area of robotics, generative models and computer vision. 
+                <p> My research interests lie in the area of generative models, computer vision, and robotics. 
                 </p> 
                 <!-- <p><font color="red"><strong>I am seeking PhD positions beginning Fall 2024!</strong></font></p> -->
               </td>
@@ -103,7 +103,7 @@
                 <strong>Zhixuan Liu</strong>, 
                 <a href="https://zwandering.github.io/">Haokun Zhu</a>,
                 <a href="https://ruichen.pub/">Rui Chen</a>,
-                <a href="https://scholar.google.com/citations?user=7CLS0LwAAAAJ&hl=en">Jonathan Francis</a>,
+                <a href="https://jonfranc.com/">Jonathan Francis</a>,
                 <a href="https://soonminhwang.github.io/">Soonmin Hwang</a>,
                 <a href="https://frc.ri.cmu.edu/~zhangji/">Ji Zhang</a>,
                 <a href="https://www.cs.cmu.edu/~./jeanoh/">Jean Oh</a>
@@ -117,6 +117,52 @@
                 <a href="https://mosaic-cmubig.github.io/">Code</a>
                 <p>
                   MOSAIC generates multi-view consistent images based on depth prior along robot navigation trajectories. It handles arbitrary viewpoint changes in multi-room environments and generalizes to open vocabulary contexts.
+                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="strive_stop()" onmouseover="strive_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='strive_image'>
+                    <img src='images/strive_demo.gif' width="105%" height="105"></div>
+                    <img src='images/strive_demo.gif' width="105%" height="105">
+                </div>
+                <script type="text/javascript">
+                  function strive_start() {
+                    document.getElementById('strive_image').style.opacity = "1";
+                  }
+
+                  function strive_stop() {
+                    document.getElementById('strive_image').style.opacity = "0";
+                  }
+                  strive_stop()
+                </script>
+              </td>
+              
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://zwandering.github.io/STRIVE.github.io/">
+                  <papertitle>STRIVE: Structured Representation Integrating VLM Reasoning for Efficient Object Navigation</papertitle>
+                </a>
+                <br>
+                <a href="https://zwandering.github.io/">Haokun Zhu*</a>,
+                <a href="https://github.com/igzat1no">Zongtai Li*</a>,
+                <strong>Zhixuan Liu</strong>, 
+                <a href="http://www.wangwenshan.com/">Wenshan Wang</a>,
+                <a href="https://frc.ri.cmu.edu/~zhangji/">Ji Zhang</a>,
+                <a href="https://jonfranc.com/">Jonathan Francis</a>,
+                <a href="https://www.cs.cmu.edu/~./jeanoh/">Jean Oh</a>
+                <br>
+                <em>Under Review</em><br>
+                <em>RSS 2025 Workshop on Semantic Reasoning and Goal Understanding in Robotics</em><br>
+                <!-- <font color="red"><strong>Oral Presentation</strong></font> -->
+                <a href="https://arxiv.org/abs/2505.06729">Paper</a>
+                /
+                <a href="https://zwandering.github.io/STRIVE.github.io/">Project Page</a>
+                /
+                <a href="https://zwandering.github.io/STRIVE.github.io/">Code</a>
+                <p>
+                  STRIVE builds structured scene representations on the fly to boost object navigation with VLMs reasoning.
                 </p>
               </td>
             </tr>
